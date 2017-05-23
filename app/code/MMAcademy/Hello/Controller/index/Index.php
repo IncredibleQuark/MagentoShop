@@ -19,8 +19,8 @@ class Index extends \Magento\Framework\App\Action\Action
         /**
          * @var Raw $result
          */
-        $result = $this->resultFactory->create('raw');
-        $result->setContents('Hello World!');
+        $result = $this->resultFactory->create('page');
+
         return $result;
     }
 }

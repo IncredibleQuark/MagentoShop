@@ -1,0 +1,13 @@
+<?php /** @var \MMAcademy\Hello\Block\Hello $block */ ?>
+
+<h1><?= $block->getGreetingText() ?></h1>
+
+<form action="" method="POST">
+    <label for="hello-name">
+        <?=__('Please type in your name') ?>
+    </label>
+    <input type="text" name="name" id="hello-name" />
+    <button class="action primary">
+        <span><?= __('Greet!') ?></span>
+    </button>
+</form>
