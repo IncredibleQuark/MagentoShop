@@ -1,0 +1,16 @@
+{
+  "name": "mmacademy/hello",
+  "description": "Shows hello message",
+  "require": {
+    "magento/framework": "100.1.*"
+  },
+
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "MMAcademy\\Hello\\": ""
+    }
+  }
+}
