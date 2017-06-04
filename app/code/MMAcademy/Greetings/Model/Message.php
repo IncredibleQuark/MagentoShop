@@ -3,10 +3,10 @@
 namespace MMAcademy\Greetings\Model;
 
 use Magento\Framework\Model\AbstractModel;
-use MMAcademy\Greetings\Api\Data\MessageInterface;
 
 
-class Message extends AbstractModel implements MessageInterface
+
+class Message extends AbstractModel implements \MMAcademy\Greetings\Api\Data\MessageInterface
 {
     public function _construct()
     {
