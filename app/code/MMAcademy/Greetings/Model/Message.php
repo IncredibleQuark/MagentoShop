@@ -14,6 +14,14 @@ class Message extends AbstractModel implements \MMAcademy\Greetings\Api\Data\Mes
         parent::_construct();
     }
 
+    public function beforeSave()
+    {
+        if(empty($this->getData('creation_time'))) {
+            $this->setData('creation_time', date('Y-m-d H:i:s'));
+        }
+        return parent::beforeSave();
+    }
+
     /**
      * @return string
      */

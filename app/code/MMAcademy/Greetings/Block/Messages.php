@@ -21,7 +21,7 @@ class Messages extends Template
         $this->greetings = $greetings;
     }
 
-    public function getMessages()
+    public function getCustomerMessages()
     {
         return $this->greetings->getLastMessages();
     }

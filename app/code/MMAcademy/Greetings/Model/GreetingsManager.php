@@ -49,7 +49,7 @@ class GreetingsManager implements GreetingsInterface
 //            $message->getValue();
 //        }  ---------------------- pobranie wartosci recznie
 
-        return $collection->getAllIds();
+        return $collection->getItems();
     }
 
     /**
